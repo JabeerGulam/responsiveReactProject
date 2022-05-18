@@ -1,41 +1,3 @@
-/* .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-} */
 
 *, *::before, *::before{
   margin: 0;
@@ -43,9 +5,7 @@
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
 }
-
 .content {
-  
   background-image: url('../public/bg.jpg');
   background-size: cover;
   background-position: center;
@@ -55,8 +15,6 @@
   height: 100%;
   position: relative;
   padding-bottom: 45px;
-  
-
 }
 .info{
   width: 50%;
@@ -67,12 +25,9 @@
   align-items: end;
   padding: 14px 0 14px  ;
   opacity: 0.8;
-
 }
-
 .info p{
  font-size: 1.5rem;
-
 }
 .info p, .info span{
   font-style: italic;
@@ -83,9 +38,7 @@
   font-size: 2.5rem;
   font-style: italic;
   display: block;
-  
 }
-
 .bg {
   position:absolute;
   top: 0;
@@ -94,21 +47,16 @@
   overflow: hidden;
 }
 .bg > img{
-    width: 100%;  
-    
+    width: 100%;    
 }
-
-
 .logo {
   display: flex;
   align-items: baseline;
 }
-
 .wrapper {
   display: flex;
   justify-content: center;
 }
-
 .footer {
   margin-top: 200px;
   display: flex;
@@ -119,7 +67,6 @@
   width: 800px;
   border-radius: 5px;
 }
-
 .footer-title{
   background-color: #8bc540;
   display: inline-block;
@@ -129,7 +76,6 @@
   padding: 15px;
   border-radius: 5px 0 0 5px;
   color: #ffff;
- 
 }
 .footer-title::after{
   content: "";
@@ -141,31 +87,24 @@
   border-right: 30px solid transparent;
   border-left: 15px solid #8bc540;
   border-bottom: 40px solid transparent;
-  
 }
 .form {
-  
   text-align: center;
   margin: 0 auto;
   padding: 8px;
-
 }
 .form p{
   font-weight: bold;
   line-height: 30px;
   color: #6d6e70;
-
 }
 .form span{
   color: #8bc540;
-
 }
-
 form{
   display: flex;
   gap: 10px;
 }
-
 form input{
   padding: 5px;
   font-size: 10px;
@@ -181,6 +120,7 @@ form button{
   cursor: pointer;
 }
 
+
 /******** TABLET SCREEN ******/
 
 @media screen and (max-width: 768px) {
@@ -188,112 +128,85 @@ form button{
   .content{
     padding-bottom: 5px;
   }
-  
   .info{
     align-items: end;
     margin-top: 70px;
     width: 410px;
-  
-}
-.footer {
-  margin-top: 150px;
-  width: 55%;
-  gap: 0; 
-  justify-content: end;
-  padding-bottom: 10px;
-  bottom: 10px;
-  height: 150px;
-  flex-direction: column;
-  
- 
-  
-}
-
-
-.footer-title{
-  display: inline-block;
-  width: fit-content;
-  margin: 0 auto;
-  line-height: 30px;
-  padding: 10px 30px;
-  border-radius: 5px;
-  color: #ffff;
-  
- 
-}
-
-.footer-title h2{
-  font-size: 1.2em;
- 
-  
-}
-.footer-title p{
-  font-size: 12px;
-  line-height: .7em;
-  
-}
-
-.footer-title::after{
-  display: none;
-}
-.form {
-  padding: 0;
-  width: 100%;
-  
-}
-
-form{
-  flex-direction: column;
-  gap: 5px;
-  
-}
-
-input, button{
-  margin: 0 auto;
-  width: 300px !important;
-  height: 25px;
-  
-}
-
-
-
-}
-
-@media  screen and (max-width: 670px) {
-  .content{
-    padding-bottom: 0;
   }
-  
   .footer {
-    margin-top: 200px;
-    width:100%;
-    border-radius: 0;
-    
-  }
-  input, button{
-    
-    width: 95% !important;
-   
-    
-  }
-}
-@media  screen and (max-width: 480px) {
-
-  .info{
-    width: 290px;
-  }
-  
-  .info p{
-   font-size: 1rem;
-  
-  }
- 
-  .info span{
-   
-    font-size: 1.5rem;
+    margin-top: 150px;
+    width: 55%;
+    gap: 0; 
+    justify-content: end;
+    padding-bottom: 10px;
+    bottom: 10px;
+    height: 150px;
+    flex-direction: column;
 
   }
+  .footer-title{
+    display: inline-block;
+    width: fit-content;
+    margin: 0 auto;
+    line-height: 30px;
+    padding: 10px 30px;
+    border-radius: 5px;
+    color: #ffff;
+  }
+
+  .footer-title h2{
+    font-size: 1.2em;
+  }
+  .footer-title p{
+    font-size: 12px;
+    line-height: .7em;
+  }
+  .footer-title::after{
+    display: none;
+  }
+  .form {
+    padding: 0;
+    width: 100%;
+  }
+  form{
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .input, button{
+    margin: 0 auto;
+    width: 300px !important;
+    height: 25px; 
+  }
+
+  }
+
+  @media  screen and (max-width: 670px) {
+    .content{
+      padding-bottom: 0;
+    }
+    .footer {
+      margin-top: 200px;
+      width:100%;
+      border-radius: 0; 
+    }
+    input, button{ 
+      width: 95% !important;
+    }
+  }
+  @media  screen and (max-width: 480px) {
+
+    .info{
+      width: 290px;
+    }
+    .info p{
+    font-size: 1rem;
+    }
+    .info span{
+      font-size: 1.5rem;
+
+    }
 
 
 
-}
+  }
