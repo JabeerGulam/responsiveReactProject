@@ -171,9 +171,9 @@ form button{
   form{
     flex-direction: column;
     gap: 5px;
+    
   }
-
-  .input, button{
+  input, button{
     margin: 0 auto;
     width: 300px !important;
     height: 25px; 
